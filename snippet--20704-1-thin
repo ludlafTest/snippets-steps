@@ -1,0 +1,34 @@
+# my_snippet--20704-1 thin
+
+
+
+copier copy gh:Tecnativa/doodba-copier-template d13.0 # 10
+
+cd d13.0/
+9
+
+nano odoo/custom/src/addons.yaml
+8
+
+cd odoo/custom/src
+7
+
+ll ???
+6
+
+invoke git-aggregate
+5
+
+invoke develop
+4
+
+invoke install -m base
+3
+
+docker-compose up -d
+2
+
+invoke install -m sale_management
+1
+
+
