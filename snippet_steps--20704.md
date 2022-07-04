@@ -14,8 +14,8 @@ nano odoo/custom/src/addons.yaml
 
 
 # repos
-- l10n-spain: [ " * " ]
-- mis-builder: [ " * " ]
+- `l10n-spain: ["*"]`
+- `mis-builder: ["*"]`
 
 
 # invoke
