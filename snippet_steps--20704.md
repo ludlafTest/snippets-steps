@@ -9,6 +9,10 @@ copier copy gh:Tecnativa/doodba-copier-template d13.0
 cd d13.0/
 
 
+# ¿base?
+invoke install -m base
+
+
 # add repos
 nano odoo/custom/src/addons.yaml
 
