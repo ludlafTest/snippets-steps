@@ -21,6 +21,7 @@ nano odoo/custom/src/addons.yaml
 # invoke
 - invoke git-aggregate
 - invoke develop
+- invoke start (¿ docker-compose up-d ?)
 - ~invoke install -m base~
 - ~invoke install -m sale_management~
 - inv install -m base,sale_management
