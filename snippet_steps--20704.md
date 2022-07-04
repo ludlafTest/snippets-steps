@@ -21,8 +21,11 @@ nano odoo/custom/src/addons.yaml
 # invoke
 - invoke git-aggregate
 - invoke develop
-- invoke install -m base
-- invoke install -m sale_management
+- ~invoke install -m base~
+- ~invoke install -m sale_management~
+- inv install -m base,sale_management
+- inv install --core (core modules)
+- inv install --private (private modules)
 
 
 # add pyOpenSSL to pip.txt (odoo/custom/dependencies)
