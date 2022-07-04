@@ -9,8 +9,6 @@ nano odoo/custom/src/addons.yaml # 8
 
 cd odoo/custom/src # 7
 
-ll ??? # 6
-
 invoke git-aggregate # 5
 
 invoke develop # 4
@@ -21,4 +19,6 @@ docker-compose up -d # 2
 
 invoke install -m sale_management # 1
 
+docker-compose down
 
+docker-compose up -d
