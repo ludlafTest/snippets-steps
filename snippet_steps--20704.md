@@ -1,13 +1,38 @@
-# mkdir v13.0 (choose Odoo version)
-mkdir v13.0
-cd v13.0
+## my_snippet--20704
+# ~mkdir v13.0 (choose Odoo version)~ \ ~mkdir v13.0~ \ ~cd v13.0~
 
 
 # ---
-# install doodba copier template in present directory
-copier copy gh:Tecnativa/doodba-copier-template .
+# install doodba copier template in new directory
+copier copy gh:Tecnativa/doodba-copier-template d13.0
 
 
+# ---
+# cd
+cd d13.0/
+
+
+# ---
+# add repos
+nano odoo/custom/src/addons.yaml
+l10n-spain: ["*"]
+mis-builder: ["*"]
+
+
+# ---
+# invoke
+invoke git-aggregate
+invoke develop
+invoke install -m base
+invoke install -m sale_management
+
+
+# ---
+# ignore from here downwards
+
+
+---
+#####
 # ---
 # add info to addons.yaml (odoo/custom/src/addons.yaml)
 account-financial-reporting: ["*"]
@@ -56,7 +81,7 @@ stock-logistics-workflow: ["*"]
 survey: ["*"]
 timesheet: ["*"]
 web: ["*"]
-website: ["*"]
+website: ["*"]~
 
 
 # ---
@@ -68,5 +93,3 @@ nano pip.txt
 # launch invoke commands (invoke develop img-pull img-build --pull git-aggregate
 # resetdb start)
 invoke develop img-pull img-build --pull git-aggregate
-
-
