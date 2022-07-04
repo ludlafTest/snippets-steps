@@ -24,14 +24,15 @@ docker-compose up -d
 
 
 ---
-reverse:
-    docker-compose up -d
-    invoke install -m base
-    invoke develop
-    invoke git-aggregate
-    cat odoo/custom/src/addons.yaml
-    nano odoo/custom/src/addons.yaml
-    ll
-    cd odoo-14/
-    copier copy gh:Tecnativa/doodba-copier-template odoo-14
-    rm -fr vvv/
+This way:
+
+rm -fr vvv/
+copier copy gh:Tecnativa/doodba-copier-template odoo-14
+cd odoo-14/
+ll
+nano odoo/custom/src/addons.yaml
+cat odoo/custom/src/addons.yaml
+invoke git-aggregate
+invoke develop
+invoke install -m base
+docker-compose up -d
