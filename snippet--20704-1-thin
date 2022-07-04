@@ -4,9 +4,9 @@ copier copy gh:Tecnativa/doodba-copier-template d13.0 # 10
 
 cd d13.0/ # 9
 
-nano odoo/custom/src/addons.yaml # 8
+~nano odoo/custom/src/addons.yaml # 8~
 
-cd odoo/custom/src # 7
+~cd odoo/custom/src # 7~
 
 invoke git-aggregate # 5
 
@@ -21,3 +21,17 @@ invoke install -m sale_management # 1
 docker-compose down
 
 docker-compose up -d
+
+
+---
+reverse:
+    docker-compose up -d
+    invoke install -m base
+    invoke develop
+    invoke git-aggregate
+    cat odoo/custom/src/addons.yaml
+    nano odoo/custom/src/addons.yaml
+    ll
+    cd odoo-14/
+    copier copy gh:Tecnativa/doodba-copier-template odoo-14
+    rm -fr vvv/
