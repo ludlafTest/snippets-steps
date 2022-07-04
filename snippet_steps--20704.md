@@ -1,7 +1,7 @@
 # my_snippet--20704
 
 
-### install doodba copier template in new directory
+# install doodba copier template in new directory
 copier copy gh:Tecnativa/doodba-copier-template d13.0
 
 
