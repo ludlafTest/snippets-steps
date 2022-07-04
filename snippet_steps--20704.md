@@ -30,7 +30,6 @@ nano pip.txt
 
 
 # launch invoke arguments
-- invoke 
 - develop 
 - img-pull 
 - img-build 
