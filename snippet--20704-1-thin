@@ -30,8 +30,8 @@ This way:
 - copier copy gh:Tecnativa/doodba-copier-template odoo-14
 - cd odoo-14/
 - ll
-- nano odoo/custom/src/addons.yaml
-- cat odoo/custom/src/addons.yaml
+- ~nano odoo/custom/src/addons.yaml~
+- ~cat odoo/custom/src/addons.yaml~
 - invoke git-aggregate
 - invoke develop
 - invoke install -m base
