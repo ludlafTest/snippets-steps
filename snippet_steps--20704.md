@@ -49,5 +49,5 @@ nano pip.txt
 
 
 # Notes:
-If changing Oddo version only, you can type: `copier -f -d odoo_version=THE_VERSION_OF_ODOO copy gh:Tecnativa/doodba-copier-template NEW_BINDER && cd NEW_BINDER`
-For example: `c`opier -f -d odoo_version=13.0 copy gh:Tecnativa/doodba-copier-template dct-13 && cd dct-13`
+If changing Odoo version only, you can type: `copier -f -d odoo_version=THE_VERSION_OF_ODOO copy gh:Tecnativa/doodba-copier-template NEW_BINDER && cd NEW_BINDER`
+For example: `copier -f -d odoo_version=13.0 copy gh:Tecnativa/doodba-copier-template dct-13 && cd dct-13`
