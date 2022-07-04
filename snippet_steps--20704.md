@@ -28,7 +28,12 @@ nano odoo/custom/src/addons.yaml
 - inv install --private (private modules)
 
 
-# add pyOpenSSL to pip.txt (odoo/custom/dependencies)
+# invoke commands
+- can be ckecked from "tasks.py" file
+- search for "def install" and you'll find install commands
+
+
+# add pyOpenSSL, if needed, to pip.txt (odoo/custom/dependencies)
 nano pip.txt
 
 
