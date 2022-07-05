@@ -36,3 +36,30 @@ This way:
 - invoke develop
 - invoke install -m base
 - docker-compose up -d
+
+
+---
+* FUNCIONANDO :: 
+  - ~Eye:~
+  - ~Lkjhg~
+  - 01 `copier -f -d odoo_version=13.0 copy gh:Tecnativa/doodba-copier-template h-13.0` # sin fish -> && cd h-13.0
+
+
+---
+  - ~copier copy gh:Tecnativa/doodba-copier-template o13.0~
+  - ~Lkjhg~
+
+  - 02 cd o13.0/
+
+  - 03 invoke git-aggregate
+
+  - 04 invoke develop
+
+  - 05 invoke install -m base
+
+  - 06 invoke start 
+
+  - ~or (vscode button or ¿docker-compose up -d?)~
+  - invoke install -m purchase
+  - ~or invoke install -m ¿l10n_es?~
+  
