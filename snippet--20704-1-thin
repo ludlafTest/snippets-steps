@@ -57,7 +57,7 @@ This way:
 
   - 05 invoke install -m base
 
-  - 06 invoke start 
+  - 06 invoke resetdb 
 
   - ~or (vscode button or ¿docker-compose up -d?)~
   - invoke install -m purchase
